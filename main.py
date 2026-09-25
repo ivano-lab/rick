@@ -1,10 +1,13 @@
+#from core.interpreter import interpretar
 from core.models import Ideia
 
-ideia = Ideia( 
-    "Construir o Rick",
-    "Criar um assistente pessoal capaz de transformar ideias em ações."
-)
+titulo = input("Título: ")
 
-print(f'Ideia: {ideia.titulo}')
-print(f'Descrição: {ideia.descricao}')
-print(f'Status: {ideia.status}')
+descricao = input("Descrição: ")
+
+ideia = Ideia(titulo, descricao)
+
+resultado = ideia.interpretar()
+
+print(f"--- Avaliação --- \n")
+print(resultado)
