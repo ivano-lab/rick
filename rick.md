@@ -1,3 +1,5 @@
+```mermaid
+
 graph TD
     A["VOCÊ <br/>(Despeja qualquer coisa: ideia, tarefa, divagação, fragmento)"] --> B["RICK (O Hub / CLI)"]
     
